@@ -1,5 +1,6 @@
 package com.example.ibratquizassignment;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("My Quiz");
         questionNo=findViewById(R.id.count);
         System.out.println(length);
         A=findViewById(R.id.A);
